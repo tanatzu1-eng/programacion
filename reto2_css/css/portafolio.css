@@ -1,0 +1,11 @@
+#meme_padrinos_magicos{
+    height: 500px;
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section p{
+    font-size: 20px;
+}
