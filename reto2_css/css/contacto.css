@@ -5,3 +5,7 @@ main section ul{
     margin-right: auto;
     background-color: rgb(47, 87, 76);
 }
+
+main section #form{
+    font-size: 20px;
+}

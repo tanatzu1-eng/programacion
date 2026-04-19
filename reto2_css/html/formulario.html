@@ -3,17 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV -> Contacto</title>
+    <title>Contactame!</title>
 
-    <!-- CSS: -->
-    <link rel="stylesheet" href="../css/general.css" type="text/css">
-    <link rel="stylesheet" href="../css/contacto.css" type="text/css">
-
-    <!-- fuente de titulo: -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/formulario.css">
 </head>
+
+
 <body>
     <header>
         <h1>Curriculum Vitae</h1>
@@ -26,29 +22,34 @@
 
     <main>
         <section>
-            <h2>Contactame, no sabes de lo que te perdes:</h2>
+            <form action="../php/solicitudes.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" type="text" name="Nombre">
 
-            <br>
+                <br>
 
-            <ul>
-                <li>Numero De Celular: 358-1234567</li>
-                <li>Instagram: no tengo xd</li>
-                <li>Facebook: tampoco tengo :v</li>
-                <li>Twitter: no tengo redes sociales</li>
-            </ul>
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="Email">
 
-            <br>
+                <br>
 
-            <P id="form">Enviame una solicitud ingresando tus datos <a href="formulario.html">AQUI</a></P>
+                <label for="descripcion">Mensaje:</label>
+                <textarea id="descripcion" rows="8" cols="80" name="Descripcion"></textarea>
+
+                <br>
+
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
 
 
     <footer> <!-- el footer tiene informacion de contacto, que ya esta en otro html, pero no se que mas poner en un footer -->
-        <div>
+        <div id="lista">
             <h3>Datos de contacto:</h3>
             
             <ul>
+                <li>Email: direccionfalsa@gmail.com</li>
                 <li>Numero De Celular: 358-1234567</li>
                 <li>Instagram: no tengo xd</li>
                 <li>Facebook: tampoco tengo :v</li>
