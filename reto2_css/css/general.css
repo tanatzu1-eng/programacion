@@ -71,7 +71,7 @@ main section{
     padding-bottom: 40px;
 }
 
-table{
+section table{
     background-color: rgb(47, 87, 76);
     margin-right: auto;
     margin-left: auto;
@@ -79,9 +79,18 @@ table{
 
 }
 
-table tr td{
+section table tr td{
     border: double;
     padding: 10px;
+}
+
+section ul, section ol, section form, section table{
+    border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px -1px 21px 9px rgba(0,0,0,0.45);
+    -webkit-box-shadow: 0px -1px 21px 9px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px -1px 21px 9px rgba(0,0,0,0.45);
 }
 /* ===============================================================================================================
 =============================================================================================================== */

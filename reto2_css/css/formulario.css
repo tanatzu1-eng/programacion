@@ -1,16 +1,25 @@
-body section{
+body main section form{
+    font-size: 20px;
+    background-color: rgb(78, 86, 82);
+    margin: 0% 30% 0% 30%;
+    padding: 1% 1% 1% 1%;
     text-align: center;
-    font-size: 20px;
 }
 
-input, textarea, button{
-    margin: 10px;
+form input, form textarea{
+    margin: 1% auto 1% auto;
+    padding: 3% 4% 3% 4%;
+    border-radius: 4px;
+    background-color: rgb(158, 211, 224);
+    width: 60%;
 }
 
-label{
-    display: block;
+form textarea{
+    width: 80%;
+    height: 400px;
 }
 
-button{
-    font-size: 20px;
+form button{
+    border-radius: 4px;
+    padding: 2%;
 }
