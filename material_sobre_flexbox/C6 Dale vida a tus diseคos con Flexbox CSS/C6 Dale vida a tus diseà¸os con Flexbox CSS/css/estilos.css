@@ -1,0 +1,82 @@
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+/* -------------Variables */
+:root{
+--green-color:#7ACC2D;
+--white-color:white;
+--black-color:#313337;
+/* Tipografía */
+--normal:12px;
+/* Espaciado */
+--space:20px;
+/* Box shadow */
+--box:0px 0 2px 1px #e6e5e9;
+}
+
+/* -------------Variables */
+html,body{
+  padding:0px;
+  margin:0px;
+  font-size: var(--normal);
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--green-color);
+  color: var(--white-color);
+}
+/* Establecer un contenedor con flexbox, atención con height: 100vh 
+
+🔍 Desglosando el término vh: Significa Viewport Height (Altura de la ventana gráfica).
+
+1vh: Es igual al 1% de la altura de la pantalla.
+100vh: Es el 100%, es decir, toda la altura visible.
+
+🥊 100vh vs. 100% (La gran confusión)
+Es muy común que los alumnos pregunten: "¿Por qué no uso simplemente 100%?". Aquí está la clave para que se lo expliques:
+height: 100%: El elemento mide el 100% de su padre. Si el padre no tiene una altura definida, el hijo no sabe cuánto medir y suele quedarse en 0px o medir solo lo que ocupe su contenido.
+height: 100vh: Al elemento no le importa quién es su padre. Él mira directamente al navegador y dice: "Yo voy a medir lo mismo que la pantalla, sin importar dónde esté metido".
+
+⚠️ Un pequeño "pero" (El dolor de cabeza en móviles)
+Como consejo: en los celulares, 100vh a veces da problemas porque no siempre descuenta el espacio de la barra de direcciones del navegador (Chrome o Safari). Esto hace que el contenido se corte un poquito abajo
+Tip importante: Si quieren ser perfeccionistas en móviles, hoy en día existe una unidad más moderna llamada dvh (Dynamic Viewport Height), que se ajusta automáticamente si la barra de direcciones aparece o desaparece.
+*/
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: flex-start;
+  align-items:stretch;
+}
+
+header {
+  display: flex;
+  background-color: #f2c94c;
+  padding: var(--space);
+}
+
+nav {
+  display: flex;
+  background-color: #e76f51;
+  padding: var(--space);
+}
+
+/* Establecer el estilo para el contenido principal, atención a flex: auto */
+main {
+  display: flex;
+  flex: auto;
+  padding: var(--space);
+}
+
+footer {
+  display: flex;
+  background-color: #2a9d8f;
+  padding: var(--space);
+}
