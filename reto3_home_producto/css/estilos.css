@@ -7,9 +7,9 @@
 #  ·················
 */
 
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700'); */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
-/* @import url('https://fonts.googleapis.com/css2?family=Combo&family=Just+Me+Again+Down+Here&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Just+Me+Again+Down+Here&display=swap');
 
 
 
@@ -20,21 +20,19 @@ VARIABLES:
 --primary-color:#7ACC2D;
 --secondary-color:white;
 --tertiary-color:#313337;
-/* --color-primario
---color-secundario
---color-fondo
---otras */
 
 /* Tipografía */
+--p--size: 94%;
 --normal:12px;
 --fuente-principal: .just-me-again-down-here-regular;
-/* --fuente-secundaria: */
 
 /* Espaciado */
 --space:1%;
 
 /* Box shadow */
---box:0px 0 2px 1px #e6e5e9;
+--shadow: 1px 0px 18px 1px rgba(0,0,0,0.45);
+-webkit-box-shadow: 1px 0px 18px 1px rgba(0,0,0,0.45);
+-moz-box-shadow: 1px 0px 18px 1px rgba(0,0,0,0.45);
 }
 /* ===============================================================================================================
 =============================================================================================================== */
@@ -60,6 +58,7 @@ NAVEGADOR:
 =============================================================================================================== */
 nav{
   display: flex;
+  flex-direction: row;
   background-color: var(--primary-color);
   padding: var(--space);
   color: var(--terciary-color);
@@ -69,6 +68,7 @@ nav{
 
 nav ul{
   display: flex;
+  flex-direction: row;
 }
 
 nav li{
@@ -93,44 +93,58 @@ nav li a:hover{
 /* ===============================================================================================================
 MAIN:
 =============================================================================================================== */
-main h1{
-  font-size: 250%;
+main{
+  margin-right: var(--space); /* margen derecho mal hecho que pidio el cliente */
 }
 
-section{
+.encabezado{
+  padding: 15%;
+  text-align: center;
+  font-size: 240%;
+}
+
+/* SECCION 1 */
+#seccion-productos{
+  margin-bottom: 5%;
+
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
   padding: 30% 15% 10% 15%;
 
   background-image: url("../images/curve.png");
   background-size: cover;
   background-position: center top;
-  gap: 3%;
-  margin-bottom: 20%;
+
+  gap: 4%;
 }
 
-article{
+.producto{
   background-color: var(--secondary-color);
   padding: 1.5%;
   margin: -39% 0 auto 0;
   box-shadow: var(--box);
+
+  width: 40%;
 }
 
-article h1{
+.producto h1{
   font-size: 160%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
-
-.encabezado{
-  padding: 15%;
-  text-align: center;
+.producto p{
+  font-size: var(--p--size);
 }
 
-article .img_content{
+.producto img{
   display: block;
   margin: auto;
 }
 
-article .boton_compra{
+.producto .boton_compra{
   background-color: var(--primary-color);
   width: 100%;
   padding: 2.5%;
@@ -141,8 +155,110 @@ article .boton_compra{
   border-radius: 2px;
 }
 
-article .boton_compra:hover{
+.producto .boton_compra:hover{
   background-color: #5e9e22;
+}
+
+/* SECCION 2 */
+#seccion-publicidad{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 5%;
+  padding: 6%;
+
+  margin-bottom: 5%;
+}
+
+.publicidad{
+  text-align: center;
+  font-size: 170%;
+  margin: 1%;
+}
+
+.publicidad-img{
+  margin: auto;
+  max-width: 30%;
+  height: 50%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.publicidad-img img{
+  width: 100%;
+  object-fit: contain; /* esto hace que la imagen mantenga su dimension sin estirarse horizontal o vericalmente */
+}
+
+.publicidad h2{
+  font-size: 90%;
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
+
+  margin-bottom: 6%;
+  margin-top: 6%;
+}
+
+.publicidad p{
+  text-align: start;
+  font-size: 50%;
+}
+
+/* SECCION 3 */
+hr{
+  opacity: 0.2;
+}
+
+.separador{
+  font-size: 200%;
+  text-align: center;
+
+  margin-bottom: 5%;
+}
+
+.menciones{
+  margin-bottom: 5%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+
+  margin: 7%;
+
+  gap: 2%;
+}
+
+.img-persona{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.img-persona img{
+  width: 100%;
+  object-fit: contain;
+}
+
+.persona h2, .persona p{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.persona p{
+  font-size: 85%;
+}
+
+.persona h2{
+  font-size: 130%;
+}
+
+.persona{
+  box-shadow: var(--shadow);
 }
 /* ===============================================================================================================
 =============================================================================================================== */
@@ -160,6 +276,8 @@ footer{
   justify-content: space-between;
   color: var(--secondary-color);
   padding: 0.5%;
+
+  margin-top: 5%;
 }
 /* ===============================================================================================================
 =============================================================================================================== */
