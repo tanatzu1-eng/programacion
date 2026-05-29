@@ -1,0 +1,283 @@
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Just+Me+Again+Down+Here&display=swap');
+
+
+
+/* ===============================================================================================================
+VARIABLES:
+=============================================================================================================== */
+:root{
+--primary-color:#7ACC2D;
+--secondary-color:white;
+--tertiary-color:#313337;
+
+/* Tipografía */
+--p--size: 94%;
+--normal:12px;
+--fuente-principal: .just-me-again-down-here-regular;
+
+/* Espaciado */
+--space:1%;
+
+/* Box shadow */
+--shadow: 1px 0px 18px 1px rgba(0,0,0,0.45);
+-webkit-box-shadow: 1px 0px 18px 1px rgba(0,0,0,0.45);
+-moz-box-shadow: 1px 0px 18px 1px rgba(0,0,0,0.45);
+}
+/* ===============================================================================================================
+=============================================================================================================== */
+
+
+
+/* ===============================================================================================================
+BODY:
+=============================================================================================================== */
+body{
+  padding:0px;
+  margin:0px;
+  font-size: var(--normal);
+  font-family: 'Open Sans', sans-serif;
+}
+/* ===============================================================================================================
+=============================================================================================================== */
+
+
+
+/* ===============================================================================================================
+NAVEGADOR:
+=============================================================================================================== */
+nav{
+  display: flex;
+  flex-direction: row;
+  background-color: var(--primary-color);
+  padding: var(--space);
+  color: var(--terciary-color);
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+}
+
+nav li{
+  padding-left: 20px;
+  list-style: none;
+
+}
+
+nav li a{
+  color: var(--terciary-color);
+  text-decoration: none;
+}
+
+nav li a:hover{
+  color: var(--secondary-color);
+}
+/* ===============================================================================================================
+=============================================================================================================== */
+
+
+
+/* ===============================================================================================================
+MAIN:
+=============================================================================================================== */
+main{
+  margin-right: var(--space); /* margen derecho mal hecho que pidio el cliente */
+}
+
+.encabezado{
+  padding: 15%;
+  text-align: center;
+  font-size: 240%;
+}
+
+/* SECCION 1 */
+#seccion-productos{
+  margin-bottom: 5%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding: 30% 15% 10% 15%;
+
+  background-image: url("../images/curve.png");
+  background-size: cover;
+  background-position: center top;
+
+  gap: 4%;
+}
+
+.producto{
+  background-color: var(--secondary-color);
+  padding: 1.5%;
+  margin: -39% 0 auto 0;
+  box-shadow: var(--box);
+
+  width: 40%;
+}
+
+.producto h1{
+  font-size: 160%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.producto p{
+  font-size: var(--p--size);
+}
+
+.producto img{
+  display: block;
+  margin: auto;
+}
+
+.producto .boton_compra{
+  background-color: var(--primary-color);
+  width: 100%;
+  padding: 2.5%;
+  font-size: var(--normal);
+  color: var(--secondary-color);
+  border:0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.producto .boton_compra:hover{
+  background-color: #5e9e22;
+}
+
+/* SECCION 2 */
+#seccion-publicidad{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 5%;
+  padding: 6%;
+
+  margin-bottom: 5%;
+}
+
+.publicidad{
+  text-align: center;
+  font-size: 170%;
+  margin: 1%;
+}
+
+.publicidad-img{
+  margin: auto;
+  max-width: 30%;
+  height: 50%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.publicidad-img img{
+  width: 100%;
+  object-fit: contain; /* esto hace que la imagen mantenga su dimension sin estirarse horizontal o vericalmente */
+}
+
+.publicidad h2{
+  font-size: 90%;
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
+
+  margin-bottom: 6%;
+  margin-top: 6%;
+}
+
+.publicidad p{
+  text-align: start;
+  font-size: 50%;
+}
+
+/* SECCION 3 */
+hr{
+  opacity: 0.2;
+}
+
+.separador{
+  font-size: 200%;
+  text-align: center;
+
+  margin-bottom: 5%;
+}
+
+.menciones{
+  margin-bottom: 5%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+
+  margin: 7%;
+
+  gap: 2%;
+}
+
+.img-persona{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.img-persona img{
+  width: 100%;
+  object-fit: contain;
+}
+
+.persona h2, .persona p{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.persona p{
+  font-size: 85%;
+}
+
+.persona h2{
+  font-size: 130%;
+}
+
+.persona{
+  box-shadow: var(--shadow);
+}
+/* ===============================================================================================================
+=============================================================================================================== */
+
+
+
+/* ===============================================================================================================
+FOOTER:
+=============================================================================================================== */
+footer{
+  background-color: #313337;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: var(--secondary-color);
+  padding: 0.5%;
+
+  margin-top: 5%;
+}
+/* ===============================================================================================================
+=============================================================================================================== */
