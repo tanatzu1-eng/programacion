@@ -31,6 +31,7 @@ VARIABLES:
 
 /* Box shadow */
 --shadow: 1px 0px 18px 1px rgba(0,0,0,0.45);
+--stronger-shadow: 2px 0px 20px 2px rgba(0,0,0,0.55);
 -webkit-box-shadow: 1px 0px 18px 1px rgba(0,0,0,0.45);
 -moz-box-shadow: 1px 0px 18px 1px rgba(0,0,0,0.45);
 }
@@ -40,9 +41,29 @@ VARIABLES:
 
 
 /* ===============================================================================================================
+MOBILE FIRST:
+=============================================================================================================== */
+/* Vista Base: Celulares (Ocupan todo el ancho) */
+.col-12 {
+    width: 100%;
+}
+
+/* Vista Desktop: Pantallas grandes (Se dividen en 3 columnas perfectas) */
+@media (min-width: 768px) {
+    .col-md-4 {
+        width: calc(33.333% - 14px); /* Restamos el espacio proporcional del gap */
+    }
+}
+/* ===============================================================================================================
+=============================================================================================================== */
+
+
+
+/* ===============================================================================================================
 BODY:
 =============================================================================================================== */
-body{
+*{
+  box-sizing: border-box;
   padding:0px;
   margin:0px;
   font-size: var(--normal);
@@ -137,6 +158,7 @@ main{
 
 .producto p{
   font-size: var(--p--size);
+  margin-bottom: 2%;
 }
 
 .producto img{
@@ -157,16 +179,16 @@ main{
 
 .producto .boton_compra:hover{
   background-color: #5e9e22;
+  transform: translateY(1px);
 }
 
 /* SECCION 2 */
 #seccion-publicidad{
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-between;
-  margin: 5%;
-  padding: 6%;
+  padding: 8%;
+  flex-wrap: wrap;
 
   margin-bottom: 5%;
 }
@@ -174,7 +196,9 @@ main{
 .publicidad{
   text-align: center;
   font-size: 170%;
-  margin: 1%;
+
+  max-width: 30%;
+  min-width: 30%;
 }
 
 .publicidad-img{
@@ -196,7 +220,6 @@ main{
   font-size: 90%;
   margin: 0;
   padding: 0;
-  flex-wrap: nowrap;
 
   margin-bottom: 6%;
   margin-top: 6%;
@@ -204,7 +227,7 @@ main{
 
 .publicidad p{
   text-align: start;
-  font-size: 50%;
+  font-size: 54%;
 }
 
 /* SECCION 3 */
@@ -245,8 +268,8 @@ hr{
 }
 
 .persona h2, .persona p{
-  margin-left: 2%;
-  margin-right: 2%;
+  margin: 5% 3%;
+  align-items: center;
 }
 
 .persona p{
@@ -259,6 +282,11 @@ hr{
 
 .persona{
   box-shadow: var(--shadow);
+}
+
+.persona:hover{
+  transform: translateY(-5px);
+  box-shadow: var(--stronger-shadow);
 }
 /* ===============================================================================================================
 =============================================================================================================== */
