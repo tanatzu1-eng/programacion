@@ -8906,7 +8906,7 @@ input[type=range]::-ms-thumb {
   font-weight: 400;
   position: relative;
   -webkit-user-select: none;
-     -moz-user-select: none;
+    -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
