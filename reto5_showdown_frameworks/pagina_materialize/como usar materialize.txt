@@ -1,0 +1,25 @@
+COLUMNAS:
+a la clase madre se le asigna la clase "row" para que los elementos vayan de izquierda a derecha,
+y a las clases hijas se les asigna la clase "col" para que tengan las 12 columnas, despues se le
+asigna el numero de columnas que tendra dependiendo el tamanio de la pantalla, los tamanios son:
+s = small, m = medium, l = large, ejemplo:
+
+<div class="row">
+    <div class="col s1 m2 l3">
+        <p>Este texto ocupa 1 columna si es una pantalla chica, 2 si es mediana y 3 si es grande</p>
+    </div>
+</div>
+
+
+si quiero que un elemento ocupe cierta cantidad de columnas pero no empezando desde la primera
+columna, hay que empujarlo con "offset", emeplo:
+
+<div class="row">
+    <div class="col s1 m2 l3 offset-s3 offset-m3 offset-l3">
+        <p>Este texto empezara desde la cuarta columna porque fue pusheado de las primeras 3</p>
+    </div>
+</div>
+
+
+
+NAVBAR:

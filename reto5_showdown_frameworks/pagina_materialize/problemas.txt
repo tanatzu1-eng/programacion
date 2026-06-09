@@ -1,0 +1,1 @@
+1. tuve que usar css puro para unas cosas que no puedo hacer con materialize

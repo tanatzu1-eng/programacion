@@ -5812,7 +5812,7 @@ body.keyboard-focused .dropdown-content li:focus {
   will-change: opacity;
 }
 
-.modal.modal-fixed-footer {
+.footermodal.modal-fixed- {
   padding: 0;
   height: 70%;
 }
