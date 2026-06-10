@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS: -->
-    <link rel="stylesheet" href="../css/materialize.min.css">
-    <link rel="stylesheet" href="../css/materialize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="../css/style.css">
 
     <!-- PESTANIA: -->
@@ -28,81 +27,108 @@
 
 <body class="brown lighten-4">
 
-    <header class="nav-wrapper row brown darken-1 z-depth-4">
+        <header class="nav-wrapper row brown darken-1 z-depth-4">
+            <!-- logo: -->
+            <div class="col l1">
+                <img src="../img/logo.png" alt="logo de la pagina a la izquierda del header" id="logo-header" class="material-symbols-outlined">
+            </div>
 
-        <!-- logo: -->
-        <div class="col l1">
-            <img src="../img/logo.png" alt="logo de la pagina a la izquierda del header" id="logo-header" class="material-symbols-outlined">
-        </div>
+            <!-- barra de navegacion: -->
+            <div class="input-field col l6 offset-l2 m8 offset-m1 s8 offset-s1 white">
+                <input id="search" type="search" required class="black-text">
+                <label for="search" class="material-symbols-outlined black-text label-icon material-icons">search</label>
+            </div>
 
-        <!-- barra de navegacion: -->
-        <div class="input-field col l6 offset-l2 m8 offset-m1 s8 offset-s1 white">
-            <input id="search" type="search" required class="black-text">
-            <label for="search" class="material-symbols-outlined black-text label-icon material-icons">search</label>
-        </div>
-
-        <!-- opciones desplegables: -->
-        <div class="">
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#" class="brand-logo material-symbols-outlined black-text">menu</a></li>
+            <!-- opciones desplegables: -->
+            <ul class="right">
+                <li><a href="#" class="black-text"><i class="small brand-logo material-symbols-outlined">menu</i></a></li>
             </ul>
-        </div>
-
-    </header>
+        </header>
 
 
-    <main class="section">
 
+    <main>
         <div class="container">
             <h2 class="center fascinate-regular">MEJORES TIPOS DE MILANESAS</h2>
             
-            <p class="center container">descripcion de la pagina, explicacion breve las categorias y demas datos a tener en cuenta</p>
+            <p class="center container">descripcion de la pagina, explicacion breve de las categorias y demas datos a tener en cuenta
+                antes de leer la informacion
+            </p>
         </div>
 
 
         <!-- seccion 1: -->
         <section class="row container section">
-
-            <h2 class="center delicious-handrawn-regular">Tipo de relleno</h2>
+            <h2 class="center delicious-handrawn-regular">Tipo de Milanesa</h2>
 
             <article class="col l4 m6 s12">
                 <div class="card medium brown lighten-1 z-depth-2 hoverable">
-                    <div class="card-image">
-                        <img src="../img/logo.png" alt="">
 
-                        <span class="card-title">Titulo de la Imagen</span>
+                    <!-- img y titulo: -->
+                    <div class="card-image">
+                        <img src="../img/milanesa-napolitana.webp" alt="">
+
+                        <span class="card-title">Napolitana</span>
                     </div>
                     
+                    <!-- texto -->
                     <div class="card-content">
                         <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
+                    </div>
+
+                    <!-- boton: -->
+                    <div class="card-action">
+                        <div class="btn">
+                            <a class="white-text">Purchase</a>
+                        </div>
                     </div>
                 </div>
             </article>
 
             <article class="col l4 m6 s12">
                 <div class="card medium brown lighten-1 z-depth-2 hoverable">
+
+                    <!-- img y titulo: -->
                     <div class="card-image">
                         <img src="../img/logo.png" alt="">
 
-                        <span class="card-title">Titulo de la Imagen</span>
+                        <span class="card-title">Titulo</span>
                     </div>
                     
+                    <!-- texto -->
                     <div class="card-content">
                         <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
+                    </div>
+
+                    <!-- boton: -->
+                    <div class="card-action">
+                        <div class="btn">
+                            <a class="white-text">Purchase</a>
+                        </div>
                     </div>
                 </div>
             </article>
 
             <article class="col l4 m6 s12">
                 <div class="card medium brown lighten-1 z-depth-2 hoverable">
+
+                    <!-- img y titulo: -->
                     <div class="card-image">
                         <img src="../img/logo.png" alt="">
 
-                        <span class="card-title">Titulo de la Imagen</span>
+                        <span class="card-title">Titulo</span>
                     </div>
                     
+                    <!-- texto -->
                     <div class="card-content">
                         <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
+                    </div>
+
+                    <!-- boton: -->
+                    <div class="card-action">
+                        <div class="btn">
+                            <a class="white-text">Purchase</a>
+                        </div>
                     </div>
                 </div>
             </article>
@@ -111,47 +137,76 @@
 
         <!-- seccion 2: -->
         <section class="row container section">
-
-            <h2 class="center delicious-handrawn-regular">Tipo de guarnicion</h2>
+            <h2 class="center delicious-handrawn-regular">Tipo de Relleno</h2>
 
             <article class="col l4 m6 s12">
                 <div class="card medium brown lighten-1 z-depth-2 hoverable">
+
+                    <!-- img y titulo: -->
                     <div class="card-image">
                         <img src="../img/logo.png" alt="">
 
-                        <span class="card-title">Titulo de la Imagen</span>
+                        <span class="card-title">Titulo</span>
                     </div>
                     
+                    <!-- texto -->
                     <div class="card-content">
                         <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
+                    </div>
+
+                    <!-- boton: -->
+                    <div class="card-action">
+                        <div class="btn">
+                            <a class="white-text">Purchase</a>
+                        </div>
                     </div>
                 </div>
             </article>
 
             <article class="col l4 m6 s12">
                 <div class="card medium brown lighten-1 z-depth-2 hoverable">
+
+                    <!-- img y titulo: -->
                     <div class="card-image">
                         <img src="../img/logo.png" alt="">
 
-                        <span class="card-title">Titulo de la Imagen</span>
+                        <span class="card-title">Titulo</span>
                     </div>
                     
+                    <!-- texto -->
                     <div class="card-content">
                         <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
+                    </div>
+
+                    <!-- boton: -->
+                    <div class="card-action">
+                        <div class="btn">
+                            <a class="white-text">Purchase</a>
+                        </div>
                     </div>
                 </div>
             </article>
 
             <article class="col l4 m6 s12">
                 <div class="card medium brown lighten-1 z-depth-2 hoverable">
+
+                    <!-- img y titulo: -->
                     <div class="card-image">
                         <img src="../img/logo.png" alt="">
 
-                        <span class="card-title">Titulo de la Imagen</span>
+                        <span class="card-title">Titulo</span>
                     </div>
                     
+                    <!-- texto -->
                     <div class="card-content">
                         <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
+                    </div>
+
+                    <!-- boton: -->
+                    <div class="card-action">
+                        <div class="btn">
+                            <a class="white-text">Purchase</a>
+                        </div>
                     </div>
                 </div>
             </article>
@@ -160,33 +215,130 @@
 
         <!-- seccion 3: -->
         <section class="row container section">
+            <h2 class="center delicious-handrawn-regular">Tipo de Guarnicion</h2>
 
-            <h2 class="center delicious-handrawn-regular">Tipo de coccion</h2>
-
-            <article class="col l6 m6 s12">
+            <article class="col l4 m6 s12">
                 <div class="card medium brown lighten-1 z-depth-2 hoverable">
+
+                    <!-- img y titulo: -->
+                    <div class="card-image">
+                        <img src="../img/milnesa-con-pure.webp" alt="">
+
+                        <span class="card-title">Con Pure</span>
+                    </div>
+                    
+                    <!-- texto -->
+                    <div class="card-content">
+                        <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
+                    </div>
+
+                    <!-- boton: -->
+                    <div class="card-action">
+                        <div class="btn">
+                            <a class="white-text">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col l4 m6 s12">
+                <div class="card medium brown lighten-1 z-depth-2 hoverable">
+
+                    <!-- img y titulo: -->
                     <div class="card-image">
                         <img src="../img/logo.png" alt="">
 
-                        <span class="card-title">Titulo de la Imagen</span>
+                        <span class="card-title">Con Arroz</span>
                     </div>
                     
+                    <!-- texto -->
+                    <div class="card-content">
+                        <p>esto es lo mas soso que hay</p>
+                    </div>
+
+                    <!-- boton: -->
+                    <div class="card-action">
+                        <div class="btn">
+                            <a class="white-text">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col l4 m6 s12">
+                <div class="card medium brown lighten-1 z-depth-2 hoverable">
+
+                    <!-- img y titulo: -->
+                    <div class="card-image">
+                        <img src="../img/logo.png" alt="">
+
+                        <span class="card-title">Titulo</span>
+                    </div>
+                    
+                    <!-- texto -->
                     <div class="card-content">
                         <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
+                    </div>
+
+                    <!-- boton: -->
+                    <div class="card-action">
+                        <div class="btn">
+                            <a class="white-text">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+        <!-- seccion 4: -->
+        <section class="row container section">
+            <h2 class="center delicious-handrawn-regular">Tipo de Coccion</h2>
+
+            <article class="col l6 m6 s12">
+                <div class="card medium brown lighten-1 z-depth-2 hoverable">
+
+                    <!-- img y titulo: -->
+                    <div class="card-image">
+                        <img src="../img/milanesa-frita.webp" alt="">
+
+                        <span class="card-title">Frita</span>
+                    </div>
+                    
+                    <!-- texto -->
+                    <div class="card-content">
+                        <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
+                    </div>
+
+                    <!-- boton: -->
+                    <div class="card-action">
+                        <div class="btn">
+                            <a class="white-text">Purchase</a>
+                        </div>
                     </div>
                 </div>
             </article>
 
             <article class="col l6 m6 s12">
                 <div class="card medium brown lighten-1 z-depth-2 hoverable">
-                    <div class="card-image">
-                        <img src="../img/logo.png" alt="">
 
-                        <span class="card-title">Titulo de la Imagen</span>
+                    <!-- img y titulo: -->
+                    <div class="card-image">
+                        <img src="../img/milanesa-horno.webp" alt="">
+
+                        <span class="card-title">Al Horno</span>
                     </div>
                     
+                    <!-- texto -->
                     <div class="card-content">
                         <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
+                    </div>
+
+                    <!-- boton: -->
+                    <div class="card-action">
+                        <div class="btn">
+                            <a class="white-text">Purchase</a>
+                        </div>
                     </div>
                 </div>
             </article>

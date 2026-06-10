@@ -1,1 +1,3 @@
 1. tuve que usar css puro para unas cosas que no puedo hacer con materialize
+
+2. las imagenes de la ultima categoria (tipo de coccion) se desacomodan al achicar un poco la pestania
