@@ -27,7 +27,7 @@
 
 <body class="bg-[#d7ccc8]">
 
-    <header class="grid grid-cols-12 bg-[#6d4c41]">
+    <header class="grid grid-cols-12 bg-[#6d4c41] shadow-xl shadow-neutral-400">
         <!-- logo: -->
         <div class="">
             <img src="../img/logo.png"
@@ -61,86 +61,105 @@
 
 
     <main>
-        <h2 class="text-5xl fascinate-regular flex justify-center m-10">MEJORES TIPOS DE MILANESAS</h2>
+        <div class="grid grid-cols-12 grid-rows-2">
+            <h2 class="
+                    text-5xl text-center fascinate-regular mt-10
+
+                    row-start-1
+                    col-start-2 col-span-10
+                    md:col-start-3 md:col-span-8"
+                >MEJORES TIPOS DE MILANESAS</h2>
             
-        <p
-        class="flex justify-center">
-            descripcion de la pagina, explicacion breve de las categorias y demas datos a tener en cuenta
-            antes de leer la informacion
-        </p>
+            <p class="
+                    text-center text-sm mt-6
+                    
+                    row-start-2 col-start-2 col-span-10
+                    sm:mx-10
+                    md:mx-15
+                    lg:col-start-3 lg:col-span-8 lg:mx-20"
+                >descripcion de la pagina, explicacion breve de las categorias y demas datos a tener en cuenta
+                antes de leer la informacion
+            </p>
+        </div>
 
 
         <!-- seccion 1: -->
-        <section class="">
-            <h2 class="delicious-handrawn-regular">Tipo de Milanesa</h2>
+        <section class="mb-24">
+            <h2 class="delicious-handrawn-regular text-5xl text-center m-10">Tipo de Milanesa</h2>
 
-            <article class="">
-                <div class="">
-
+            <article class="grid grid-cols-12 mb-5">
+                <div class="col-start-2 col-span-10">
                     <!-- img y titulo: -->
-                    <div class="">
-                        <img src="../img/milanesa-napolitana.webp" alt="">
+                    <div class="overflow-hidden rounded-sm">
+                        <img src="../img/milanesa-napolitana.jpg" alt="imagende milanesa napolitana">
 
-                        <span class="">Napolitana</span>
+                        <h2 class="ml-5 -mt-56 mb-5 text-2xl text-white">Napolitana</h2>
                     </div>
                     
-                    <!-- texto -->
-                    <div class="">
-                        <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
-                    </div>
+                    <!-- texto y boton: -->
+                    <div class="relative bg-[#996f60] rounded-b-sm">
+                        <div class="p-6 text-sm">
+                            <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
+                        </div>
 
-                    <!-- boton: -->
-                    <div class="">
-                        <div class="">
-                            <a class="">Purchase</a>
+                        <hr class="text-neutral-400">
+                        
+                        <div class="py-8 mx-5">
+                            <div class="bg-[#62b698] px-4 p-2 float-start -my-5">
+                                <a class="text-white">Purchase</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </article>
 
-            <article class="">
-                <div class="">
-
+            <article class="grid grid-cols-12 mb-5">
+                <div class="col-start-2 col-span-10">
                     <!-- img y titulo: -->
-                    <div class="">
-                        <img src="../img/logo.png" alt="">
+                    <div class="overflow-hidden rounded-sm">
+                        <img src="../img/milanesa-a-caballo.jpg" alt="imagen de milanesa a caballo">
 
-                        <span class="">Titulo</span>
+                        <h2 class="ml-5 -mt-56 mb-5 text-2xl text-white">A Caballo</h2>
                     </div>
                     
-                    <!-- texto -->
-                    <div class="">
-                        <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
-                    </div>
+                    <!-- texto y boton: -->
+                    <div class="relative bg-[#996f60] rounded-b-sm">
+                        <div class="p-5 text-sm">
+                            <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
+                        </div>
 
-                    <!-- boton: -->
-                    <div class="">
-                        <div class="">
-                            <a class="">Purchase</a>
+                        <hr class="text-neutral-400">
+                        
+                        <div class="py-8 mx-5">
+                            <div class="bg-[#62b698] px-4 p-2 float-start -my-5">
+                                <a class="text-white">Purchase</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </article>
 
-            <article class="">
-                <div class="">
-
+            <article class="grid grid-cols-12 mb-5">
+                <div class="col-start-2 col-span-10">
                     <!-- img y titulo: -->
-                    <div class="card-image">
-                        <img src="../img/logo.png" alt="">
+                    <div class="overflow-hidden rounded-sm">
+                        <img src="../img/milanesa-fugazzeta.jpg" alt="imagen de milanesa fugazzeta">
 
-                        <span class="">Titulo</span>
+                        <h2 class="ml-5 -mt-56 mb-5 text-2xl text-white">Fugazzeta</h2>
                     </div>
                     
-                    <!-- texto -->
-                    <div class="">
-                        <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
-                    </div>
+                    <!-- texto y boton: -->
+                    <div class="relative bg-[#996f60] rounded-b-sm">
+                        <div class="p-5 text-sm">
+                            <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
+                        </div>
 
-                    <!-- boton: -->
-                    <div class="">
-                        <div class="">
-                            <a class="">Purchase</a>
+                        <hr class="text-neutral-400">
+                        
+                        <div class="py-8 mx-5">
+                            <div class="bg-[#62b698] px-4 p-2 float-start -my-5">
+                                <a class="text-white">Purchase</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -149,76 +168,82 @@
 
 
         <!-- seccion 2: -->
-        <section class="">
-            <h2 class="delicious-handrawn-regular">Tipo de Relleno</h2>
+        <section class="mb-24">
+            <h2 class="delicious-handrawn-regular text-5xl text-center m-10">Tipo de Relleno</h2>
 
-            <article class="">
-                <div class="">
-
+            <article class="grid grid-cols-12 mb-5">
+                <div class="col-start-2 col-span-10">
                     <!-- img y titulo: -->
-                    <div class="">
-                        <img src="../img/logo.png" alt="">
+                    <div class="overflow-hidden rounded-sm">
+                        <img src="../img/falta_imagen.jpg" alt="falta imagen">
 
-                        <span class="">Titulo</span>
+                        <h2 class="ml-5 -mt-56 mb-5 text-2xl text-white">Titulo</h2>
                     </div>
                     
-                    <!-- texto -->
-                    <div class="">
-                        <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
-                    </div>
+                    <!-- texto y boton: -->
+                    <div class="relative bg-[#996f60] rounded-b-sm">
+                        <div class="p-5 text-sm">
+                            <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
+                        </div>
 
-                    <!-- boton: -->
-                    <div class="">
-                        <div class="">
-                            <a class="">Purchase</a>
+                        <hr class="text-neutral-400">
+                        
+                        <div class="py-8 mx-5">
+                            <div class="bg-[#62b698] px-4 p-2 float-start -my-5">
+                                <a class="text-white">Purchase</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </article>
 
-            <article class="">
-                <div class="">
-
+            <article class="grid grid-cols-12 mb-5">
+                <div class="col-start-2 col-span-10">
                     <!-- img y titulo: -->
-                    <div class="">
-                        <img src="../img/logo.png" alt="">
+                    <div class="overflow-hidden rounded-sm">
+                        <img src="../img/falta_imagen.jpg" alt="falta imagen">
 
-                        <span class="">Titulo</span>
+                        <h2 class="ml-5 -mt-56 mb-5 text-2xl text-white">Titulo</h2>
                     </div>
                     
-                    <!-- texto -->
-                    <div class="">
-                        <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
-                    </div>
+                    <!-- texto y boton: -->
+                    <div class="relative bg-[#996f60] rounded-b-sm">
+                        <div class="p-5 text-sm">
+                            <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
+                        </div>
 
-                    <!-- boton: -->
-                    <div class="">
-                        <div class="">
-                            <a class="">Purchase</a>
+                        <hr class="text-neutral-400">
+                        
+                        <div class="py-8 mx-5">
+                            <div class="bg-[#62b698] px-4 p-2 float-start -my-5">
+                                <a class="text-white">Purchase</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </article>
 
-            <article class="">
-                <div class="">
-
+            <article class="grid grid-cols-12 mb-5">
+                <div class="col-start-2 col-span-10">
                     <!-- img y titulo: -->
-                    <div class="">
-                        <img src="../img/logo.png" alt="">
+                    <div class="overflow-hidden rounded-sm">
+                        <img src="../img/falta_imagen.jpg" alt="falta imagen">
 
-                        <span class="">Titulo</span>
+                        <h2 class="ml-5 -mt-56 mb-5 text-2xl text-white">Titulo</h2>
                     </div>
                     
-                    <!-- texto -->
-                    <div class="">
-                        <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
-                    </div>
+                    <!-- texto y boton: -->
+                    <div class="relative bg-[#996f60] rounded-b-sm">
+                        <div class="p-5 text-sm">
+                            <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
+                        </div>
 
-                    <!-- boton: -->
-                    <div class="">
-                        <div class="">
-                            <a class="">Purchase</a>
+                        <hr class="text-neutral-400">
+                        
+                        <div class="py-8 mx-5">
+                            <div class="bg-[#62b698] px-4 p-2 float-start -my-5">
+                                <a class="text-white">Purchase</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -227,76 +252,82 @@
 
 
         <!-- seccion 3: -->
-        <section class="">
-            <h2 class="delicious-handrawn-regular">Tipo de Guarnicion</h2>
+        <section class="mb-24">
+            <h2 class="delicious-handrawn-regular text-5xl text-center m-10">Tipo de Guarnicion (las mas tipicas)</h2>
 
-            <article class="">
-                <div class="">
-
+            <article class="grid grid-cols-12 mb-5">
+                <div class="col-start-2 col-span-10">
                     <!-- img y titulo: -->
-                    <div class="">
-                        <img src="../img/milnesa-con-pure.webp" alt="">
+                    <div class="overflow-hidden rounded-sm">
+                        <img src="../img/milnesa-con-pure.webp" alt="imagen de milanesa con pure">
 
-                        <span class="">Con Pure</span>
+                        <h2 class="ml-5 -mt-56 mb-5 text-2xl text-white">Con Pure</h2>
                     </div>
                     
-                    <!-- texto -->
-                    <div class="">
-                        <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
-                    </div>
+                    <!-- texto y boton: -->
+                    <div class="relative bg-[#996f60] rounded-b-sm">
+                        <div class="p-5 text-sm">
+                            <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
+                        </div>
 
-                    <!-- boton: -->
-                    <div class="">
-                        <div class="">
-                            <a class="">Purchase</a>
+                        <hr class="text-neutral-400">
+                        
+                        <div class="py-8 mx-5">
+                            <div class="bg-[#62b698] px-4 p-2 float-start -my-5">
+                                <a class="text-white">Purchase</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </article>
 
-            <article class="">
-                <div class="">
-
+            <article class="grid grid-cols-12 mb-5">
+                <div class="col-start-2 col-span-10">
                     <!-- img y titulo: -->
-                    <div class="">
-                        <img src="../img/mila-con-arroz.jpg" alt="">
+                    <div class="overflow-hidden rounded-sm">
+                        <img src="../img/falta_imagen.jpg" alt="falta imagen">
 
-                        <span class="">Con Arroz</span>
+                        <h2 class="ml-5 -mt-56 mb-5 text-2xl text-white">Titulo</h2>
                     </div>
                     
-                    <!-- texto -->
-                    <div class="">
-                        <p>esto es lo mas soso que hay</p>
-                    </div>
+                    <!-- texto y boton: -->
+                    <div class="relative bg-[#996f60] rounded-b-sm">
+                        <div class="p-5 text-sm">
+                            <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
+                        </div>
 
-                    <!-- boton: -->
-                    <div class="">
-                        <div class="">
-                            <a class="">Purchase</a>
+                        <hr class="text-neutral-400">
+                        
+                        <div class="py-8 mx-5">
+                            <div class="bg-[#62b698] px-4 p-2 float-start -my-5">
+                                <a class="text-white">Purchase</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </article>
 
-            <article class="">
-                <div class="">
-
+            <article class="grid grid-cols-12 mb-5">
+                <div class="col-start-2 col-span-10">
                     <!-- img y titulo: -->
-                    <div class="">
-                        <img src="../img/logo.png" alt="">
+                    <div class="overflow-hidden rounded-sm">
+                        <img src="../img/falta_imagen.jpg" alt="falta imagen">
 
-                        <span class="">Titulo</span>
+                        <h2 class="ml-5 -mt-56 mb-5 text-2xl text-white">Titulo</h2>
                     </div>
                     
-                    <!-- texto -->
-                    <div class="">
-                        <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
-                    </div>
+                    <!-- texto y boton: -->
+                    <div class="relative bg-[#996f60] rounded-b-sm">
+                        <div class="p-5 text-sm">
+                            <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
+                        </div>
 
-                    <!-- boton: -->
-                    <div class="">
-                        <div class="">
-                            <a class="">Purchase</a>
+                        <hr class="text-neutral-400">
+                        
+                        <div class="py-8 mx-5">
+                            <div class="bg-[#62b698] px-4 p-2 float-start -my-5">
+                                <a class="text-white">Purchase</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -305,52 +336,56 @@
 
 
         <!-- seccion 4: -->
-        <section class="">
-            <h2 class="delicious-handrawn-regular">Tipo de Coccion</h2>
+        <section class="mb-12">
+            <h2 class="delicious-handrawn-regular text-5xl text-center m-10">Tipo de Coccion</h2>
 
-            <article class="">
-                <div class="">
-
+            <article class="grid grid-cols-12 mb-5">
+                <div class="col-start-2 col-span-10">
                     <!-- img y titulo: -->
-                    <div class="">
-                        <img src="../img/milanesa-frita.webp" alt="">
+                    <div class="overflow-hidden rounded-sm">
+                        <img src="../img/milanesa-frita.webp" alt="imagen de milanesa frita">
 
-                        <span class="">Frita</span>
+                        <h2 class="ml-5 -mt-56 mb-5 text-2xl text-white">Frita</h2>
                     </div>
                     
-                    <!-- texto -->
-                    <div class="">
-                        <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
-                    </div>
+                    <!-- texto y boton: -->
+                    <div class="relative bg-[#996f60] rounded-b-sm">
+                        <div class="p-5 text-sm">
+                            <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
+                        </div>
 
-                    <!-- boton: -->
-                    <div class="">
-                        <div class="">
-                            <a class="">Purchase</a>
+                        <hr class="text-neutral-400">
+                        
+                        <div class="py-8 mx-5">
+                            <div class="bg-[#62b698] px-4 p-2 float-start -my-5">
+                                <a class="text-white">Purchase</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </article>
 
-            <article class="">
-                <div class="">
-
+            <article class="grid grid-cols-12 mb-5">
+                <div class="col-start-2 col-span-10">
                     <!-- img y titulo: -->
-                    <div class="">
-                        <img src="../img/milanesa-horno.webp" alt="">
+                    <div class="overflow-hidden rounded-sm">
+                        <img src="../img/milanesa-horno.webp" alt="imagen de milanesa al horno">
 
-                        <span class="">Al Horno</span>
+                        <h2 class="ml-5 -mt-56 mb-5 text-2xl text-white">Al Horno</h2>
                     </div>
                     
-                    <!-- texto -->
-                    <div class="">
-                        <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
-                    </div>
+                    <!-- texto y boton: -->
+                    <div class="relative bg-[#996f60] rounded-b-sm">
+                        <div class="p-5 text-sm">
+                            <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
+                        </div>
 
-                    <!-- boton: -->
-                    <div class="">
-                        <div class="">
-                            <a class="">Purchase</a>
+                        <hr class="text-neutral-400">
+                        
+                        <div class="py-8 mx-5">
+                            <div class="bg-[#62b698] px-4 p-2 float-start -my-5">
+                                <a class="text-white">Purchase</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -359,14 +394,11 @@
     </main>
 
 
-    <footer class="">
-        <div class="">
-            <div class="">
-                <div class="">
-                    <p>© 2026 Francisco Sbarra - Noel Albert Rüegger.</p>
-                    <p>Todos los derechos reservados, copiarnos una sola linea de codigo es razon suficiente para doxear al perpetrador.</p>
-                </div>
-            </div>
+    <footer class="bg-[#6d4c41]">
+        <div class="text-sm p-5 text-center">
+            <p>© 2026 Francisco Sbarra - Noel Albert Rüegger.</p>
+            <br>
+            <p>Todos los derechos reservados, copiarnos una sola linea de codigo es razon suficiente para doxear al perpetrador.</p>
         </div>
     </footer>
 
