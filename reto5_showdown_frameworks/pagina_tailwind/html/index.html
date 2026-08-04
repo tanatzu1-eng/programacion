@@ -3,23 +3,39 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
     <!-- CSS: -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="../css/style.css">
+    <link
+        rel="stylesheet"
+        href="../css/style.css">
 
     <!-- PESTANIA: -->
-    <link rel="icon" type="image/png" href="../img/logo.png"/>
+    <link
+        rel="icon"
+        type="image/png"
+        href="../img/logo.png"/>
     <title>TOP Milanesas Tailwind</title>
 
     <!-- FUENTES: -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Fascinate&display=swap" rel="stylesheet">
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Fascinate&display=swap"
+        rel="stylesheet">
 
     <!-- ICONOS: -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu,search" />
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu,search" />
 
 </head>
 
@@ -31,30 +47,36 @@
         <!-- logo: -->
         <div>
             <a href="index.html">
-                <img src="../img/logo.png"
-                alt="logo de la pagina a la izquierda del header"
-                id="logo-header">
+                <img
+                    src="../img/logo.png"
+                    alt="logo de la pagina a la izquierda del header"
+                    id="logo-header">
             </a>
         </div>
 
         <!-- barra de navegacion: -->
         <div class="flex items-center col-start-4 col-span-6 mb-2">
-            <span class="material-symbols-outlined bg-white p-1 pl-3">search</span>
-            <input id="search"
-            required
-            type="search"
-            placeholder="Buscar..."
-            class="black-text bg-white p-1 w-full
-                outline-none focus:outline-none focus:ring-0 focus:border-transparent"> <!-- no tengo idea de como funciona esto, lo saque del chat gpt para quitar los bordes que se hacen al escribir -->
+            <span
+                class="material-symbols-outlined bg-white p-1 pl-3"
+                >search</span>
+            <input
+                id="search"
+                required
+                type="search"
+                placeholder="Buscar..."
+                class="black-text bg-white p-1 w-full
+                    outline-none focus:outline-none focus:ring-0 focus:border-transparent"> <!-- no tengo idea de como funciona esto, lo saque del chat gpt para quitar los bordes que se hacen al escribir -->
         </div>
 
         <!-- opciones desplegables: -->
         <div class="col-start-12 flex justify-end items-center">
             <ul>
-                <li><a
-                    href="#"
-                    class="">
-                        <i class="material-symbols-outlined">menu</i>
+                <li>
+                    <a
+                        href="">
+                        <i
+                            class="material-symbols-outlined"
+                            >menu</i>
                     </a>
                 </li>
             </ul>
@@ -65,16 +87,16 @@
 
     <main>
         <div class="grid grid-cols-12 grid-rows-2">
-            <h2 class="
-                    text-5xl text-center titulo mt-10
+            <h2
+                class="text-5xl text-center titulo mt-10
                     row-start-1
                     col-start-2 col-span-10
                     md:col-start-3 md:col-span-8"
                 >MEJORES TIPOS DE MILANESAS
             </h2>
             
-            <p class="
-                    text-center text-sm mt-6                    
+            <p
+                class="text-center text-sm mt-6                    
                     row-start-2 col-start-2 col-span-10
                     sm:mx-10
                     md:mx-15
@@ -87,15 +109,17 @@
 
         <!-- seccion 1: -->
         <section class="mb-24">
-            <h2 class="subtitulo text-5xl text-center m-10 -mt-5 mb-5">Tipo de Milanesa</h2>
+            <h2
+                class="subtitulo text-5xl text-center m-10 -mt-5 mb-5"
+                >Tipo de Milanesa</h2>
 
             <div class="grid grid-cols-1
-                        sm:grid-cols-12 sm:gap-x-1
-                        lg:grid-cols-11 lg:mx-28">
+                    sm:grid-cols-12 sm:gap-x-1
+                    lg:grid-cols-11 lg:mx-28">
 
                 <article class="mx-9 shadow-neutral-600 shadow-md hover:shadow-lg transition-shadow col-span-1 m-3
-                                sm:col-start-2 sm:col-span-5 sm:mx-2
-                                lg:col-start-2 lg:col-span-3">
+                            sm:col-start-2 sm:col-span-5 sm:mx-2
+                            lg:col-start-2 lg:col-span-3">
                     <div class="h-[340px] bg-[#8D6E63] rounded-t">
 
                         <!-- imagen -->
@@ -105,9 +129,9 @@
                                 alt="imagen milanesa napolitana"
                                 class="w-full h-60 object-cover">
 
-                            <span class="absolute bottom-6 left-6 text-white text-2xl font-medium">
-                                Napolitana
-                            </span>
+                            <span
+                                class="absolute bottom-6 left-6 text-white text-2xl font-medium"
+                                >Napolitana</span>
                         </div>
 
                         <!-- contenido -->
@@ -124,15 +148,18 @@
                     <div class="p-6 bg-[#8D6E63] rounded-b">
                         <a
                             href="napolitana.html"
-                            class="bg-[#26A69A] text-white px-4 py-[10px] rounded hover:bg-[#2BBBAD] text-sm shadow-neutral-600 shadow-sm hover:shadow-md"
-                            >MAS INFO
-                        </a>
+                            class="px-4 py-[10px] rounded text-sm
+                                bg-[#26A69A] text-white hover:bg-[#2BBBAD]
+                                shadow-neutral-600 shadow-sm
+                                hover:shadow-md"
+                            >MAS INFO</a>
                     </div>
                 </article>
 
-                <article class="mx-9 shadow-neutral-600 shadow-md hover:shadow-lg transition-shadow m-3
-                                sm:col-start-7 sm:col-span-5 sm:mx-2
-                                lg:col-start-5 lg:col-span-3">
+                <article class="mx-9 shadow-neutral-600 shadow-md transition-shadow m-3
+                            hover:shadow-lg
+                            sm:col-start-7 sm:col-span-5 sm:mx-2
+                            lg:col-start-5 lg:col-span-3">
                     <div class="h-[340px] bg-[#8D6E63] rounded-t">
 
                         <!-- imagen -->
@@ -142,9 +169,9 @@
                                 alt="imagen milanesa a caballo"
                                 class="w-full h-60 object-cover">
 
-                            <span class="absolute bottom-6 left-6 text-white text-2xl font-medium">
-                                A Caballo
-                            </span>
+                            <span
+                                class="absolute bottom-6 left-6 text-white text-2xl font-medium"
+                                >A Caballo</span>
                         </div>
 
                         <!-- contenido -->
@@ -162,14 +189,13 @@
                         <a
                             href="napolitana.html"
                             class="bg-[#26A69A] text-white px-4 py-[10px] rounded hover:bg-[#2BBBAD] text-sm shadow-neutral-600 shadow-sm hover:shadow-md"
-                            >MAS INFO
-                        </a>
+                            >MAS INFO</a>
                     </div>
                 </article>
 
                 <article class="mx-9 shadow-neutral-600 shadow-md hover:shadow-lg transition-shadow col-span-1 m-3
-                                sm:col-start-2 sm:col-span-5 sm:mx-2
-                                lg:col-start-8 lg:col-span-3">
+                            sm:col-start-2 sm:col-span-5 sm:mx-2
+                            lg:col-start-8 lg:col-span-3">
                     <div class="h-[340px] bg-[#8D6E63] rounded-t">
 
                         <!-- imagen -->
@@ -186,9 +212,7 @@
 
                         <!-- contenido -->
                         <div class="text-base m-6 line-clamp-3">
-                            <p>
-                                descripcion descriptiva que describe muy bien la milanesa actualmente descrita
-                            </p>
+                            <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
                         </div>
                     </div>
 
@@ -198,9 +222,10 @@
                     <div class="p-6 bg-[#8D6E63] rounded-b">
                         <a
                             href="napolitana.html"
-                            class="bg-[#26A69A] text-white px-4 py-[10px] rounded hover:bg-[#2BBBAD] text-sm shadow-neutral-600 shadow-sm hover:shadow-md"
-                            >MAS INFO
-                        </a>
+                            class="px-4 py-[10px] rounded text-sm
+                            shadow-sm shadow-neutral-600 hover:shadow-md
+                            bg-[#26A69A] text-white hover:bg-[#2BBBAD]"
+                            >MAS INFO</a>
                     </div>
                 </article>
 
@@ -210,15 +235,17 @@
 
         <!-- seccion 2: -->
         <section class="mb-24">
-            <h2 class="subtitulo text-5xl text-center m-10 mb-5">Tipo de Relleno</h2>
+            <h2
+            class="subtitulo text-5xl text-center m-10 mb-5"
+            >Tipo de Relleno</h2>
 
             <div class="grid grid-cols-1
-                        sm:grid-cols-12 sm:gap-x-1
-                        lg:grid-cols-11 lg:mx-28">
+                    sm:grid-cols-12 sm:gap-x-1
+                    lg:grid-cols-11 lg:mx-28">
 
                 <article class="mx-9 shadow-neutral-600 shadow-md hover:shadow-lg transition-shadow col-span-1 m-3
-                                sm:col-start-2 sm:col-span-5 sm:mx-2
-                                lg:col-start-2 lg:col-span-3">
+                            sm:col-start-2 sm:col-span-5 sm:mx-2
+                            lg:col-start-2 lg:col-span-3">
                     <div class="h-[340px] bg-[#8D6E63] rounded-t">
 
                         <!-- imagen -->
@@ -228,9 +255,9 @@
                                 alt="imagen milanesa napolitana"
                                 class="w-full h-60 object-cover">
 
-                            <span class="absolute bottom-6 left-6 text-white text-2xl font-medium">
-                                Titulo
-                            </span>
+                            <span
+                                class="absolute bottom-6 left-6 text-white text-2xl font-medium"
+                                >Titulo</span>
                         </div>
 
                         <!-- contenido -->
@@ -248,8 +275,7 @@
                         <a
                             href="napolitana.html"
                             class="bg-[#26A69A] text-white px-4 py-[10px] rounded hover:bg-[#2BBBAD] text-sm shadow-neutral-600 shadow-sm hover:shadow-md"
-                            >MAS INFO
-                        </a>
+                            >MAS INFO</a>
                     </div>
                 </article>
 
@@ -265,9 +291,9 @@
                                 alt="imagen milanesa a caballo"
                                 class="w-full h-60 object-cover">
 
-                            <span class="absolute bottom-6 left-6 text-white text-2xl font-medium">
-                                Titulo
-                            </span>
+                            <span
+                                class="absolute bottom-6 left-6 text-white text-2xl font-medium"
+                                >Titulo</span>
                         </div>
 
                         <!-- contenido -->
@@ -285,8 +311,7 @@
                         <a
                             href="napolitana.html"
                             class="bg-[#26A69A] text-white px-4 py-[10px] rounded hover:bg-[#2BBBAD] text-sm shadow-neutral-600 shadow-sm hover:shadow-md"
-                            >MAS INFO
-                        </a>
+                            >MAS INFO</a>
                     </div>
                 </article>
 
@@ -302,9 +327,9 @@
                                 alt="imagen milanesa fugazzeta"
                                 class="w-full h-60 object-cover">
 
-                            <span class="absolute bottom-6 left-6 text-white text-2xl font-medium">
-                                Titulo
-                            </span>
+                            <span
+                                class="absolute bottom-6 left-6 text-white text-2xl font-medium"
+                                >Titulo</span>
                         </div>
 
                         <!-- contenido -->
@@ -322,8 +347,7 @@
                         <a
                             href="napolitana.html"
                             class="bg-[#26A69A] text-white px-4 py-[10px] rounded hover:bg-[#2BBBAD] text-sm shadow-neutral-600 shadow-sm hover:shadow-md"
-                            >MAS INFO
-                        </a>
+                            >MAS INFO</a>
                     </div>
                 </article>
 
@@ -333,7 +357,9 @@
 
         <!-- seccion 3: -->
         <section class="mb-24">
-            <h2 class="subtitulo text-5xl text-center m-10 mb-5">Tipo de Guarnicion (las mas tipicas)</h2>
+            <h2
+                class="subtitulo text-5xl text-center m-10 mb-5"
+                >Tipo de Guarnicion (las mas tipicas)</h2>
 
             <div class="grid grid-cols-1
                         sm:grid-cols-12 sm:gap-x-1
@@ -351,16 +377,14 @@
                                 alt="imagen milanesa napolitana"
                                 class="w-full h-60 object-cover">
 
-                            <span class="absolute bottom-6 left-6 text-white text-2xl font-medium">
-                                Con Pure
-                            </span>
+                            <span
+                                class="absolute bottom-6 left-6 text-white text-2xl font-medium"
+                                >Con Pure</span>
                         </div>
 
                         <!-- contenido -->
                         <div class="text-base m-6 line-clamp-3">
-                            <p>
-                                descripcion descriptiva que describe muy bien la milanesa actualmente descrita
-                            </p>
+                            <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
                         </div>
                     </div>
 
@@ -371,8 +395,7 @@
                         <a
                             href="napolitana.html"
                             class="bg-[#26A69A] text-white px-4 py-[10px] rounded hover:bg-[#2BBBAD] text-sm shadow-neutral-600 shadow-sm hover:shadow-md"
-                            >MAS INFO
-                        </a>
+                            >MAS INFO</a>
                     </div>
                 </article>
 
@@ -388,9 +411,9 @@
                                 alt="imagen milanesa a caballo"
                                 class="w-full h-60 object-cover">
 
-                            <span class="absolute bottom-6 left-6 text-white text-2xl font-medium">
-                                Titulo
-                            </span>
+                            <span
+                                class="absolute bottom-6 left-6 text-white text-2xl font-medium"
+                                >Titulo</span>
                         </div>
 
                         <!-- contenido -->
@@ -408,8 +431,7 @@
                         <a
                             href="napolitana.html"
                             class="bg-[#26A69A] text-white px-4 py-[10px] rounded hover:bg-[#2BBBAD] text-sm shadow-neutral-600 shadow-sm hover:shadow-md"
-                            >MAS INFO
-                        </a>
+                            >MAS INFO</a>
                     </div>
                 </article>
 
@@ -425,16 +447,14 @@
                                 alt="imagen milanesa fugazzeta"
                                 class="w-full h-60 object-cover">
 
-                            <span class="absolute bottom-6 left-6 text-white text-2xl font-medium">
-                                Titulo
-                            </span>
+                            <span
+                                class="absolute bottom-6 left-6 text-white text-2xl font-medium"
+                                >Titulo</span>
                         </div>
 
                         <!-- contenido -->
                         <div class="text-base m-6 line-clamp-3">
-                            <p>
-                                descripcion descriptiva que describe muy bien la milanesa actualmente descrita
-                            </p>
+                            <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
                         </div>
                     </div>
 
@@ -445,8 +465,7 @@
                         <a
                             href="napolitana.html"
                             class="bg-[#26A69A] text-white px-4 py-[10px] rounded hover:bg-[#2BBBAD] text-sm shadow-neutral-600 shadow-sm hover:shadow-md"
-                            >MAS INFO
-                        </a>
+                            >MAS INFO</a>
                     </div>
                 </article>
 
@@ -474,16 +493,13 @@
                                 alt="imagen milanesa napolitana"
                                 class="w-full h-60 object-cover">
 
-                            <span class="absolute bottom-6 left-6 text-white text-2xl font-medium">
-                                Frita
-                            </span>
+                            <span class="absolute bottom-6 left-6 text-white text-2xl font-medium"
+                                >Frita</span>
                         </div>
 
                         <!-- contenido -->
                         <div class="text-base m-6 line-clamp-3">
-                            <p>
-                                descripcion descriptiva que describe muy bien la milanesa actualmente descrita
-                            </p>
+                            <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
                         </div>
                     </div>
 
@@ -494,8 +510,7 @@
                         <a
                             href="napolitana.html"
                             class="bg-[#26A69A] text-white px-4 py-[10px] rounded hover:bg-[#2BBBAD] text-sm shadow-neutral-600 shadow-sm hover:shadow-md"
-                            >MAS INFO
-                        </a>
+                            >MAS INFO</a>
                     </div>
                 </article>
 
@@ -511,16 +526,13 @@
                                 alt="imagen milanesa a caballo"
                                 class="w-full h-60 object-cover">
 
-                            <span class="absolute bottom-6 left-6 text-white text-2xl font-medium">
-                                Al Horno
-                            </span>
+                            <span class="absolute bottom-6 left-6 text-white text-2xl font-medium"
+                            >Al Horno</span>
                         </div>
 
                         <!-- contenido -->
                         <div class="text-base m-6 line-clamp-3">
-                            <p>
-                                descripcion descriptiva que describe muy bien la milanesa actualmente descrita
-                            </p>
+                            <p>descripcion descriptiva que describe muy bien la milanesa actualmente descrita</p>
                         </div>
                     </div>
 
