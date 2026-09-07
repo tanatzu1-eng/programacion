@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Presentación - Tema Oscuro</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Fuente Google Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="page-wrapper">
+        <!-- Componente Tarjeta de Presentación -->
+        <article class="profile-card">
+            <!-- Efecto de resplandor ambiental decorativo -->
+            <div class="card-glow" aria-hidden="true"></div>
+
+            <!-- Cabecera: Avatar, Nombre y Rol -->
+            <header class="card-header">
+                <div class="avatar-container">
+                    <img 
+                        src="../img/cheems.jpg" 
+                        alt="Meme de Cheems con amsiedad" 
+                        class="avatar-image"
+                    >
+                    <span class="status-indicator" title="Tiene amsiedad" aria-label="Tiene amsiedad"></span>
+                </div>
+
+                <div class="user-meta">
+                    <h1 class="user-name">Cheems</h1>
+                    <p class="user-role">Ingeniero en Amsiedad & Bugs</p>
+                </div>
+            </header>
+
+            <!-- Cuerpo: Biografía, Etiquetas y Estadísticas -->
+            <section class="card-body">
+                <p class="user-bio">
+                    Mucho código me da amsiedad. A veces rompo la base de datos pero es parte del aprendizaje, ademas siempre le pido a la IA que arregle mis codigos y funciona, pero no me pidan que los explique porque no me sale y me da mas amsiedad.
+                </p>
+
+                <!-- Etiquetas de habilidades cómicas -->
+                <ul class="tag-list" aria-label="Especialidades">
+                    <li class="tag-item">Quemar Agua</li>
+                    <li class="tag-item">Olvidar Claves</li>
+                    <li class="tag-item">Dormir Siestas</li>
+                    <li class="tag-item">git push -f a main</li>
+                </ul>
+
+                <!-- Métricas humorísticas -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">+99</span>
+                        <span class="stat-label">Tropiezos</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">0</span>
+                        <span class="stat-label">Backups</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Ganas</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pie de tarjeta: Botón de acción con hover interactivo -->
+            <footer class="card-footer">
+                <button type="button" class="btn-primary" aria-label="Contratar a Pancracio de todas formas">
+                    <span class="btn-text">Contratar Igual</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </button>
+            </footer>
+        </article>
+    </main>
+
+</body>
+</html>

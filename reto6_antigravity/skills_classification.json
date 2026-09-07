@@ -1,0 +1,322 @@
+[
+  {
+    "skill": "technical-tutorials",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "audio-transcriber",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "usage-based-pricing",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "developer-newsletter",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "alternatives-pages",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "api-endpoint-builder",
+    "status": "keep",
+    "justification": "Relevant to frontend stack (Tailwind/HTML5/A11y) and documentation."
+  },
+  {
+    "skill": "antigravity-skill-orchestrator",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "angular",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "postgres-best-practices",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "developer-audience-context",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "permission-manager",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "developer-listening",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "postgres-readonly-queries",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "sdk-dx",
+    "status": "keep",
+    "justification": "Relevant to frontend stack (Tailwind/HTML5/A11y) and documentation."
+  },
+  {
+    "skill": "skill-creator",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "smart-git-automation",
+    "status": "keep",
+    "justification": "Relevant to frontend stack (Tailwind/HTML5/A11y) and documentation."
+  },
+  {
+    "skill": "notebooklm",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "free-tier-strategy",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "github-presence",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "python-pptx-generator",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "it-manager-hospital",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "subagent-orchestrator",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "skill-suggester",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "privacy-by-design",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "itil-expert",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "bug-hunter",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "prompt-engineer",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "youtube-summarizer",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "developer-sandbox",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "angular-best-practices",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "changelog-updates",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "competitor-tracking",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "devrel-content",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "open-source-marketing",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "api-onboarding",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "anti-sycophancy",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "shopify-development",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "stitch-ui-design",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "app-store-optimization",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "diary",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "developer-churn",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "voice-ai-engine-development",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "community-building",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "using-lwc",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "gemini-deep-research",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "uncle-bob-craft",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "dev-to-hashnode",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "developer-signup-flow",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "developer-seo",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "react-best-practices",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "remote-gpu-trainer",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "fedora-hyprland-installer",
+    "status": "keep",
+    "justification": "Relevant to frontend stack (Tailwind/HTML5/A11y) and documentation."
+  },
+  {
+    "skill": "angular-ui-patterns",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "sankhya-dashboard-html-jsp-custom-best-pratices",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "power-user-cultivation",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "performance-optimizer",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "telegram-bot-messaging",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "angular-state-management",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "loki-mode",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "it-manager-pro",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "docs-as-marketing",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "last30days",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  },
+  {
+    "skill": "developer-advocacy",
+    "status": "remove",
+    "justification": "Contains references to prohibited technology."
+  },
+  {
+    "skill": "developer-onboarding",
+    "status": "remove",
+    "justification": "No clear relevance to allowed stack."
+  }
+]
