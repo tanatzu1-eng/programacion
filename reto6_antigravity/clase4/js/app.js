@@ -235,24 +235,15 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span class="text-xs font-ui uppercase text-stone-400 block">Dulzura: ${product.dulzura}</span>
                         <span class="font-heading text-lg font-bold text-amber-500">${product.precio}</span>
                     </div>
-                    <button 
-                        type="button" 
-                        class="view-detail-btn vintage-btn px-4 py-2 bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600 text-stone-950 font-ui font-bold text-sm rounded-xl shadow-lg flex items-center gap-1.5"
-                        data-id="${product.id}"
-                    >
-                        <span>Ver más</span>
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                        </svg>
-                    </button>
+
                 </div>
             </article>
         `).join('');
 
-        // Listeners para los botones de detalle
-        document.querySelectorAll('.view-detail-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const id = btn.getAttribute('data-id');
+        // Listeners para hacer clic en la tarjeta del producto
+        document.querySelectorAll('article[data-id]').forEach(card => {
+            card.addEventListener('click', () => {
+                const id = card.getAttribute('data-id');
                 openProductDetailModal(id);
             });
         });
@@ -306,7 +297,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function clearValidationErrors() {
-        const fields = ['nombre', 'apellido', 'email', 'telefono', 'documento'];
+        const fields = ['nombre', 'apellido', 'email', 'telefono', 'tarjeta', 'numero-tarjeta', 'expiracion', 'cvv'];
         fields.forEach(field => {
             const input = document.getElementById(`input-${field}`);
             const errorMsg = document.getElementById(`error-${field}`);
@@ -342,11 +333,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const apellido = document.getElementById('input-apellido').value.trim();
         const email = document.getElementById('input-email').value.trim();
         const telefono = document.getElementById('input-telefono').value.trim();
-        const documento = document.getElementById('input-documento').value.trim();
+        // const documento = document.getElementById('input-documento').value.trim();
 
         // Validación Nombre
         if (nombre.length < 2 || !/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(nombre)) {
-            setFieldError('nombre', 'El nombre debe contener al menos 2 letras y sin caracteres especiales.');
+            setFieldError('nombre', 'El nombre debe contener al menos 2 letras y sin caracteres especiales o numeros.');
             isValid = false;
         }
 
@@ -356,27 +347,67 @@ document.addEventListener('DOMContentLoaded', () => {
             isValid = false;
         }
 
-        // Validación Email
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        // Validación Email (solo Gmail, Hotmail, Yahoo, al menos un carácter alfanumérico antes de @)
+        const emailRegex = /^[A-Za-z0-9][A-Za-z0-9._%+-]*@(gmail\.com|hotmail\.com|yahoo\.com)$/i;
         if (!emailRegex.test(email)) {
-            setFieldError('email', 'Por favor ingresa un correo electrónico válido (ej: usuario@dominio.com).');
+            setFieldError('email', 'El correo debe ser Gmail, Hotmail o Yahoo y contener al menos un carácter alfanumérico antes de la @.');
             isValid = false;
         }
 
-        // Validación Teléfono (Mínimo 8 dígitos numéricos)
-        const phoneRegex = /^[0-9+-\s]{8,18}$/;
+        // Validación Teléfono (solo números, 7-15 dígitos)
+        const phoneRegex = /^\d{7,15}$/;
         if (!phoneRegex.test(telefono)) {
-            setFieldError('telefono', 'El teléfono debe contener al menos 8 dígitos numéricos.');
+            setFieldError('telefono', 'El teléfono debe contener solo números y entre 7 y 15 dígitos.');
             isValid = false;
         }
 
-        // Validación DNI / Documento (Mínimo 6 caracteres)
-        if (documento.length < 6 || !/^[a-zA-Z0-9]+$/.test(documento)) {
-            setFieldError('documento', 'Ingresa un DNI, pasaporte o visa válido (mínimo 6 caracteres alfanuméricos).');
+                // Documento validation removed
+
+        const tarjeta = document.getElementById('input-tarjeta').value;
+        const numeroTarjeta = document.getElementById('input-numero-tarjeta').value.trim();
+        const expiracion = document.getElementById('input-expiracion').value.trim();
+        const cvv = document.getElementById('input-cvv').value.trim();
+
+        // Validación Tipo de Tarjeta (obligatorio)
+        if (!tarjeta) {
+            setFieldError('tarjeta', 'Seleccione un tipo de tarjeta.');
+            isValid = false;
+        } else if (tarjeta === 'Visa') {
+            if (!/^4\d{15}$/.test(numeroTarjeta)) {
+                setFieldError('numero-tarjeta', 'Visa debe tener 16 dígitos y comenzar con 4.');
+                isValid = false;
+            }
+            if (!/^\d{3}$/.test(cvv)) {
+                setFieldError('cvv', 'El código de seguridad debe ser de 3 dígitos.');
+                isValid = false;
+            }
+        } else if (tarjeta === 'MasterCard') {
+            if (!/^\d{13,19}$/.test(numeroTarjeta)) {
+                setFieldError('numero-tarjeta', 'MasterCard debe tener entre 13 y 19 dígitos numéricos.');
+                isValid = false;
+            }
+            if (!/^\d{3}$/.test(cvv)) {
+                setFieldError('cvv', 'El código de seguridad debe ser de 3 dígitos.');
+                isValid = false;
+            }
+        } else if (tarjeta === 'Pasaporte') {
+            if (!/^[a-zA-Z0-9]{6,11}$/.test(numeroTarjeta)) {
+                setFieldError('numero-tarjeta', 'Pasaporte debe tener entre 6 y 11 caracteres alfanuméricos.');
+                isValid = false;
+            }
+            // No CVV para Pasaporte
+        }
+
+        // Validación Expiración (MM/AAAA)
+        if (expiracion.length === 0) {
+            setFieldError('expiracion', 'La fecha de vencimiento es obligatoria.');
+            isValid = false;
+        } else if (!/^\d{2}\/\d{4}$/.test(expiracion)) {
+            setFieldError('expiracion', 'Formato inválido. Use MM/AAAA.');
             isValid = false;
         }
 
-        return isValid ? { nombre, apellido, email, telefono, documento } : null;
+        return isValid ? { nombre, apellido, email, telefono, documento, tarjeta, numeroTarjeta, expiracion, ...(tarjeta !== 'Pasaporte' && { cvv }) } : null;
     }
 
     function handleAccountFormSubmit(e) {
@@ -569,7 +600,17 @@ document.addEventListener('DOMContentLoaded', () => {
         openCreateAccountBtn.addEventListener('click', () => openAccountModal('create'));
         openEditAccountBtn.addEventListener('click', () => openAccountModal('edit'));
         deleteAccountBtn.addEventListener('click', deleteAccount);
-        themeToggleBtn.addEventListener('click', toggleTheme);
+        // Mostrar/ocultar CVV según tipo de tarjeta
+        const tarjetaSelect = document.getElementById('input-tarjeta');
+        const cvvWrapper = document.getElementById('cvv-wrapper');
+        tarjetaSelect.addEventListener('change', function () {
+            if (this.value === 'Visa' || this.value === 'MasterCard') {
+                cvvWrapper.classList.remove('hidden');
+            } else {
+                cvvWrapper.classList.add('hidden');
+            }
+        });
+
     }
 
     // Iniciar aplicación

@@ -291,7 +291,7 @@
         6. Modal de Formulario de Cuenta / Perfil (<dialog>)
         ======================================================================= -->
     <dialog id="account-modal" class="rounded-2xl p-0 max-w-md w-[92vw] bg-stone-900 text-stone-100 border border-amber-700/40 shadow-2xl overflow-hidden animate-slide-down">
-        <div class="p-6">
+        <div class="p-6 max-h-[80vh] overflow-y-auto">
             <div class="flex items-center justify-between pb-3 border-b border-amber-900/30 mb-5">
                 <h3 id="account-modal-title" class="font-heading text-xl font-bold text-amber-400">
                     Crear Cuenta en MyCandies
@@ -303,7 +303,7 @@
                 <!-- Nombre -->
                 <div>
                     <label for="input-nombre" class="block font-ui text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">
-                        Nombre *
+                        Nombre
                     </label>
                     <input 
                         type="text" 
@@ -317,7 +317,7 @@
                 <!-- Apellido -->
                 <div>
                     <label for="input-apellido" class="block font-ui text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">
-                        Apellido *
+                        Apellido
                     </label>
                     <input 
                         type="text" 
@@ -331,12 +331,12 @@
                 <!-- Email -->
                 <div>
                     <label for="input-email" class="block font-ui text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">
-                        Correo Electrónico *
+                        Correo Electrónico
                     </label>
                     <input 
                         type="email" 
                         id="input-email" 
-                        placeholder="walter@sugarmail.com" 
+                        placeholder="heisenberg@gmail.com" 
                         class="w-full px-3.5 py-2.5 text-sm font-ui bg-stone-950 border border-amber-900/40 rounded-xl text-stone-100 focus:outline-none focus:border-amber-500 transition-colors"
                     >
                     <span id="error-email" class="text-xs text-red-400 font-ui mt-1 block hidden"></span>
@@ -345,7 +345,7 @@
                 <!-- Teléfono -->
                 <div>
                     <label for="input-telefono" class="block font-ui text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">
-                        Número de Teléfono *
+                        Número de Teléfono
                     </label>
                     <input 
                         type="tel" 
@@ -354,20 +354,47 @@
                         class="w-full px-3.5 py-2.5 text-sm font-ui bg-stone-950 border border-amber-900/40 rounded-xl text-stone-100 focus:outline-none focus:border-amber-500 transition-colors"
                     >
                     <span id="error-telefono" class="text-xs text-red-400 font-ui mt-1 block hidden"></span>
+                <div>
+
                 </div>
 
-                <!-- DNI / Pasaporte / Visa -->
+                <!-- Payment Method Selection -->
                 <div>
-                    <label for="input-documento" class="block font-ui text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">
-                        DNI / Pasaporte / Visa *
+                    <label for="input-tarjeta" class="block font-ui text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">
+                        Tipo de Tarjeta
                     </label>
-                    <input 
-                        type="text" 
-                        id="input-documento" 
-                        placeholder="Número de documento de identidad" 
-                        class="w-full px-3.5 py-2.5 text-sm font-ui bg-stone-950 border border-amber-900/40 rounded-xl text-stone-100 focus:outline-none focus:border-amber-500 transition-colors"
-                    >
-                    <span id="error-documento" class="text-xs text-red-400 font-ui mt-1 block hidden"></span>
+                    <select id="input-tarjeta" class="w-full px-3.5 py-2.5 text-sm font-ui bg-stone-950 border border-amber-900/40 rounded-xl text-stone-100 focus:outline-none focus:border-amber-500 transition-colors">
+                        <option value="" disabled selected>Selecciona una tarjeta</option>
+                        <option value="Visa">Visa</option>
+                        <option value="MasterCard">MasterCard</option>
+                        <option value="Pasaporte">Pasaporte</option>
+                    </select>
+                    <span id="error-tarjeta" class="text-xs text-red-400 font-ui mt-1 block hidden"></span>
+                </div>
+                <!-- Card Number -->
+                <div>
+                    <label for="input-numero-tarjeta" class="block font-ui text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">Número de Tarjeta</label>
+                    <input type="text" id="input-numero-tarjeta" placeholder="1234 5678 9012 3456"
+                           class="w-full px-3.5 py-2.5 text-sm font-ui bg-stone-950 border border-amber-900/40 rounded-xl text-stone-100 focus:outline-none focus:border-amber-500 transition-colors" />
+                    <span id="error-numero-tarjeta" class="text-xs text-red-400 font-ui mt-1 block hidden"></span>
+                </div>
+
+
+
+                <!-- Expiration Date -->
+                <div>
+                    <label for="input-expiracion" class="block font-ui text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">Fecha de Vencimiento</label>
+                    <input type="date" id="input-expiracion" class="w-full px-3.5 py-2.5 text-sm font-ui bg-stone-950 border border-amber-900/40 rounded-xl text-stone-100 focus:outline-none focus:border-amber-500 transition-colors" />
+                    <span id="error-expiracion" class="text-xs text-red-400 font-ui mt-1 block hidden"></span>
+                </div>
+
+                <!-- CVV -->
+                <div id="cvv-wrapper" class="hidden">
+                    <label for="input-cvv" class="block font-ui text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">
+                        Código de Seguridad (CVV)
+                    </label>
+                    <input type="text" id="input-cvv" placeholder="123" class="w-full px-3.5 py-2.5 text-sm font-ui bg-stone-950 border border-amber-900/40 rounded-xl text-stone-100 focus:outline-none focus:border-amber-500 transition-colors" />
+                    <span id="error-cvv" class="text-xs text-red-400 font-ui mt-1 block hidden"></span>
                 </div>
 
                 <!-- Botón de Envío -->
@@ -378,6 +405,8 @@
                     >
                         <span id="account-submit-text">Crear Cuenta</span>
                     </button>
+                </div>>Crear Cuenta</span>
+
                 </div>
             </form>
         </div>
