@@ -1,0 +1,5 @@
+# node_modules y dependencias pesadas
+node_modules/
+
+# Archivos demasiado grandes para GitHub (>100MB)
+backup_agentic_skills.tar.gz
